@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>lab 4</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="../user/user.html">
+        <div class="field">
+            <div class="row">
+                <label for="username">Введите регистрационное имя:</label>
+                <input type="text" id="username" required />
+            </div>
+            <div class="row">
+                <label for="password">Введите пароль:</label>
+                <input type="password" id="password" required />
+            </div>
+            <div class="row">
+                <label for="confirm-password">Подтвердите пароль:</label>
+                <input type="password" id="confirm-password" required />
+            </div>
+        </div>
+        <div>
+            <label for="radio1 radio2 radio3 radio4">Ваш возраст:</label>
+            <input type="radio" id="radio1" name="age" value="до 20" checked />
+            <label for="radio1">до 20</label>
+            <input type="radio" id="radio2" name="age" value="20-30" />
+            <label for="radio2">20-30</label>
+            <input type="radio" id="radio3" name="age" value="30-50" />
+            <label for="radio3">30-50</label>
+            <input type="radio" id="radio4" name="age" value="старше 50" />
+            <label for="radio4">старше 50</label>
+        </div>
+        <div>
+            <label for="checkbox1 checkbox2 checkbox3 checkbox4">На каких языках читаете:</label>
+            <input type="checkbox" name="lang" id="checkbox1" value="русский" checked required />
+            <label for="checkbox1">русский</label>
+            <input type="checkbox" name="lang" id="checkbox2" value="английский" />
+            <label for="checkbox2">английский</label>
+            <input type="checkbox" name="lang" id="checkbox3" value="французский" />
+            <label for="checkbox3">французский</label>
+            <input type="checkbox" name="lang" id="checkbox4" value="немецкий" />
+            <label for="checkbox4">немецкий</label>
+        </div>
+        <div>
+            <label for="datatype">Какой формат данных является для Вас предподчительным?</label><br>
+            <select name="datatype" id="datatype" size="2" required>
+                <option name="datatype" value="HTML" selected>HTML</option>
+                <option name="datatype" value="Plain text">Plain text</option>
+            </select>
+        </div>
+        <div class="authors">
+            <label for="authors">Ваши любимые авторы:</label><br>
+            <textarea maxlength="150" id="authors" cols="40" rows="8"></textarea>
+        </div>
+        <input class="btn" type="submit" id="submit" value="Ок" onclick="createAndSaveUser()">
+        <input class="btn" type="reset" value="Отмена" />
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>

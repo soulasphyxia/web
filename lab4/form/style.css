@@ -1,0 +1,21 @@
+textarea {
+    resize: none;
+}
+
+.btn {
+    width: 120px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.row:not(:first-child) {
+    margin-top: 5px;
+}
+
+div {
+    margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lab2</title>
+</head>
+<body>
+    <h1>10.	Написать сценарий, позволяющий просматривать несколько изображений. Номер изображения выбирает пользователь. Изображение меняется при нажатии кнопки «показать».</h1>
+    <div class="app">
+
+        <img id="image-field" width="300" height="300" />
+        <div class="controls">
+            <button class="controls-btn" id="prev-btn"><-</button>
+            <p><input id="number" type="number" value="1"> / <span id="total"></span></p>
+            <button class="controls-btn" id="next-btn">-></button>
+        </div>
+
+        <button id="show">Показать</button>
+        <p id="error-field"></p>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
