@@ -22,9 +22,9 @@ function parseUserAgentData(userAgentData) {
 function getPlatform(userAgent) {
     getBrowser(userAgent);
     let platform = "Unknown";
-    if (userAgent.indexOf("Win") != 1) platform = "Windows";
-    if (userAgent.indexOf("Mac") != 1) platform = "MacOS";
-    if (userAgent.indexOf("Linux") != 1) platform = "Linux";
+    if (userAgent.indexOf("Win") != -1) platform = "Windows";
+    if (userAgent.indexOf("Mac") != -1) platform = "MacOS";
+    if (userAgent.indexOf("Linux") != -1) platform = "Linux";
     return platform;
 }
 
