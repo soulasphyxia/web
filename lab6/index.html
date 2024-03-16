@@ -11,7 +11,21 @@
 </head>
 
 <body>
-
+    <h1>Вариант 3. Создайте HTML-документ с формой. На форму поместите рисунок pic1.gif, и текстовое поле, куда
+        пользователь мог бы ввести слово slow, medium или fast, выбирая скорость смены картинок (pic2.gif, pic3.gif).
+        Пусть medium стоит по умолчанию. 800 будет быстро. 1600 будет умеренно. 2400 будет медленно. Запускать анимацию
+        должна текстовая ссылка "Показать анимацию".</h1>
+    <div class="app">
+        <img id="animation" src="media/pic1.gif" width="20%">
+        <br>
+        <label for="speed">Выберите скорость:</label>
+        <select id="speed">
+            <option value="2400">slow</option>
+            <option value="1600" selected>medium</option>
+            <option value="800">fast</option>
+        </select>
+        <p id="animation-label" onclick="startAnimation()">Показать анимацию</p>
+    </div>
 </body>
 <script src="index.js"></script>
 

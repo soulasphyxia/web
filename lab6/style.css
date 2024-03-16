@@ -1,0 +1,10 @@
+.app {
+    text-align: center;
+}
+
+
+
+#animation-label:hover {
+    color: blue;
+    cursor: pointer;
+}
