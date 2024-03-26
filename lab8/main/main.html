@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Главная страница</h1>
+    <a href="../form/form.html">Добавить покупателя</a>
+    <div class="tools">
+        <div class="find">
+            <select class="customer-info" name="find-key" id="find-key">
+                <option name="find-key" value="name" selected>Имя</option>
+                <option name="find-key" value="second-name">Фамилия</option>
+                <option name="find-key" value="surname">Отчество</option>
+                <option name="find-key" value="sex">Пол</option>
+                <option name="find-key" value="height">Рост</option>
+                <option name="find-key" value="weight">Вес</option>
+                <option name="find-key" value="birth-date">Дата рождения</option>
+                <option name="find-key" value="phone-number">Номер телефона</option>
+                <option name="find-key" value="city">Город</option>
+                <option name="find-key" value="card-number">Номер карты</option>
+                <option name="find-key" value="bank-account">Номер банковского счёта</option>
+            </select>
+            <label for="find-key">==</label>
+            <label for="find-key"><input type="text" id="find-value" /></label>
+            <label for="find-key"><button id="find-btn">Поиск</button></label>
+        </div>
+        <button id="reset">Сброс</button>
+    </div>
+    <table id="customer-table">
+        <tr>
+            <th class="sort-key" id="id">#</th>
+            <th class="sort-key" id="name">ФИО</span></th>
+            <th class="sort-key" id="sex">Пол</th>
+            <th class="sort-key" id="height">Рост</th>
+            <th class="sort-key" id="weight">Вес</th>
+            <th>Национальность</th>
+            <th class="sort-key" id="birth-date">Дата рождения</th>
+            <th>Номер телефона</th>
+            <th>Адрес</th>
+            <th>Номер карты</th>
+            <th>Банковский счёт</th>
+        </tr>
+    </table>
+</body>
+<script type="module" src="index.js"></script>
+
+</html>

@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.row:not(:first-child) {
+    margin-top: 5px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+
+.number {
+    width: 320px;
+}

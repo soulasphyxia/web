@@ -1,0 +1,31 @@
+.sort-key:hover {
+    cursor: pointer;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+th[scope="col"] {
+    background-color: #505050;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d6ecd4;
+}
+
+tr:nth-of-type(odd) td {
+    background-color: #eee;
+}
+
+.find {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#reset {
+    margin-bottom: 10px;
+}
